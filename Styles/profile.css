@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    background-color: hsl(252.86deg 29.17% 18.82%);
+    color: #adafc8;
+    justify-content: center;
+    font-family: Montserrat, sans-serif;;
+}
+.logo, .gerb{
+    width:20%;
+}
+.imgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.personalsec{
+    margin-top: 2%;
+}
+p>span{
+    font-weight: bolder;
+}
+.personalsec>p, .extracurricular>p{
+    margin: 2%;
+}
+.extracurricular{
+    margin: 2% 0%;
+}
+.initials{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1%;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3%;
+    margin-bottom: 3%;
+}
+.extracurr{
+    margin-left: 2%;
+}
+.personal{
+    margin-right: 2%;
+}
+.extracurr, .personal{
+    font-size: small;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid #0197c3;
+    color: #048588;
+    font-weight: bold;
+    padding: 3%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.extracurr:hover, .personal:hover{
+    background-color: #00000042;
+    border-color: #00000042;
+    color: white;
+}
+.pfp{
+    max-width: 100%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    padding: 5px;
+    object-fit: cover;
+    object-position: 50% 30%;
+    border: 2px solid black;
+    margin-bottom: 15px;
+}
+.card{
+    padding-top: 30px;
+
+    background-color: hsl(252.86deg 23.73% 23.14%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    height: 30%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 50px black;
+}
+.skills{
+    background-color: hsl(248.89deg 19.42% 27.25%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 3%;
+    width:100%  
+}
+.slist{
+    margin: 0%;
+    flex-wrap: wrap;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+li{
+    margin: 2%;
+    border: 1px solid black;
+    padding: 1%;
+}
