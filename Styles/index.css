@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body, main{
+    background-color: #100c31;
+    font-family: Montserrat, sans-serif;
+    color: antiquewhite;
+    margin-bottom: 0%;
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+}
+header{
+    background-color: #242427;
+    position: sticky;
+    border-radius: 1.3rem;
+    margin: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+a{
+    transition: ease-in-out 0.2s;
+    color: antiquewhite;
+    font-size: larger;
+    text-decoration: none;
+}
+a:hover{
+    scale: 1.2;
+    text-decoration: underline;
+}
+.vertical_separator{
+    display: inline;
+    font-size: larger;
+    border-left: 2px solid gray;
+    margin-right: 0.5rem;
+    margin-left: 0.3rem;
+}
+.name_logo{
+    width: 20vw;
+    margin-bottom: 1.2rem;
+}
+.fa-bars{
+    cursor: pointer;
+    margin-right: 2rem;
+}
+@keyframes myAnimation{
+    0%{
+      opacity: 1;
+    }
+    50%{
+      opacity: 0.5;
+      transform: rotateX(90deg);
+    }
+    100%{
+      display: none;
+      opacity: 0;
+      transform: rotateX(90deg);
+
+    }
+  }
+  
+  .animate{
+      animation-name: myAnimation;
+      animation-duration: 500ms;
+      animation-fill-mode: forwards;
+  }
+  @keyframes myunAnimation{
+    0%{
+      opacity: 0;
+      transform: rotateX(90deg);
+    }
+    50%{
+      opacity: 0.5;
+      transform: rotateX(0deg);
+    }
+    100%{
+        display: block;
+      opacity: 1;
+    }
+  }
+  
+  .unanimate{
+      animation-name: myunAnimation;
+      animation-duration: 2000ms;
+      animation-fill-mode: backwards;
+  }
+.fa-times{
+    cursor: pointer;
+    margin-bottom: 3rem;
+}
+#hz{
+    width: 6vw;
+    margin-left: 1.3rem;
+}
+.description{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5%;
+}
+.description>h3{
+    margin-bottom: 1rem;
+}
+.description>p{
+    padding: 1.5rem;
+    border: 2px solid #af8a4a;
+    border-radius: 5px;
+}
+.photo{
+    -webkit-mask-image: linear-gradient(#000, rgba(0, 0, 0, 0.001));
+    mask-image: linear-gradient(#000, rgba(0, 0, 0, 0.001));
+    opacity: 80%;
+    width: 25%;
+}
+
+#mySidenav{
+    display: flex;
+    width: 0%;
+    z-index: 1;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: fixed;
+    background: rgba(170, 160, 51, 0.7);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.links>a{
+    margin-bottom: 0.5rem;
+}
