@@ -41,7 +41,7 @@
     <main>
         <img src="/Images/1692462129077.JPG" class="me" alt="photo">
         <section class="bio">
-            <h2>GEORGI CHITARLIEV</h2>
+            <img src="/Images/Screenshot_2023-09-06_151716-removebg-preview_name.png" alt="name">
             <h5 id="tendencies"><i>Violent Tendencies...</i></h5>
             <section class="description">
                 <section class="bio">
@@ -60,17 +60,25 @@
                 </section>
             </section>
             <section class="personal">
-                <section class="bars">
+                <ul class="bars" role="list">
                     <h3>Skills</h3>
                     <p>Problem solving:</p>
-                    <progress id="problemsolving" max="100" value="90"></progress>
+                    <div class="progress">
+                        <div id="problem_solving"></div>
+                      </div>
                     <p>Teamwork:</p>
-                    <progress id="problemsolving" max="100" value="75"></progress>
+                    <div class="progress">
+                        <div id="teamwork"></div>
+                      </div>
                     <p>Time management:</p>
-                    <progress id="problemsolving" max="100" value="60"></progress>
+                    <div class="progress">
+                        <div id="time"></div>
+                      </div>
                     <p>Motivation:</p>
-                    <progress id="problemsolving" max="100" value="80"></progress>
-                </section>
+                    <div class="progress">
+                        <div id="motivation"></div>
+                      </div>
+                </ul>
                 <div class="divider"></div>
                 <section class="thoughts">
                     <h3>Extras</h3>
@@ -88,12 +96,12 @@
     </main>
     <footer>
         <p>Gosho - All rights reserved &copy;</p>
-        <section class="media">
+        <ul class="media">
             <i class="fab fa-instagram fa-2x"></i>
             <i class="fab fa-youtube fa-2x"></i>
             <i class="fab fa-reddit-alien fa-2x"></i>
             <i class="fab fa-google fa-2x"></i>
-        </section>
+        </ul>
     </footer>
     <script src="/functionality.js"></script>
 </body>

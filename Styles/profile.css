@@ -1,7 +1,6 @@
 .me{
     width: 30vw;
     height: 80vh;
-    border: 5px double #af8a4a;
     margin-right: 3rem;
     border-radius: 1rem;
     box-shadow: 0.5rem 0.5rem 2rem 0.8rem black;
@@ -28,6 +27,11 @@ main{
 }
 .bars{
     width: 40%;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
 }
 .personal{
     display: flex;
@@ -60,7 +64,7 @@ main{
     justify-content: center;
     width: 60%;
 }
-.bars>p, progress{
+.bars>p, .progress{
     margin-left: 1rem;
 }
 .bars>h3{
@@ -77,4 +81,65 @@ main{
 }
 .fr, .goals{
     margin-left: 1rem;
+}
+.progress{
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 3vh;
+    margin-bottom: 0.2rem;
+    width: 22vw;
+}
+      
+#problem_solving {
+    animation: problem 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: linear-gradient(to right, #017ac9, #af8a4a);
+    height: 2vh;
+}
+      
+@keyframes problem {
+    0% { width: 0; }
+    100% { width: 90%; }
+}
+#teamwork {
+    animation: teamwork 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: linear-gradient(to right, #017ac9, #af8a4a);
+    height: 2vh;
+}
+      
+@keyframes teamwork {
+    0% { width: 0; }
+    100% { width: 75%; }
+}
+#time {
+    animation: time 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: linear-gradient(to right, #017ac9, #af8a4a);
+    height: 2vh;
+}
+      
+@keyframes time {
+    0% { width: 0; }
+    100% { width: 60%; }
+}
+#motivation {
+    animation: motivation 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: linear-gradient(to right, #017ac9, #af8a4a);
+    height: 2vh;
+}
+      
+@keyframes motivation {
+    0% { width: 0; }
+    100% { width: 80%; }
 }
