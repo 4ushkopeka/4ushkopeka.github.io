@@ -3,11 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
     <link rel="stylesheet" type="text/css" href="/Styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="/Styles/index.css">
     <link rel="stylesheet" type="text/css" href="/Styles/profile.css">
     <title>My profile</title>
 </head>
-<body onload="ShowInfo()">
+<body onload="showInfo()">
+    <header>
+        <nav>
+            <img src="/Images/hz-logo.png" alt="hz_logo" id="hz">
+            <ul class="linklist" role="list">
+                <a href="/Pages/index.html">Home</a>
+                <div class="vertical_separator"></div>
+                <a href="/Pages/myprofile.html"  class="highlighted">My Profile</a>
+                <div class="vertical_separator"></div>
+                <a href="/Pages/dashboard.html">Personal Dashboard</a>
+                <div class="vertical_separator"></div>
+                <a href="/Pages/faq.html">FAQ</a>
+                <div class="vertical_separator"></div>
+                <a href="/Pages/blog.html">Blog</a>
+            </ul>
+        </nav>
+        <i class="fas fa-bars fa-2x" style="color: #ffffff;"></i>
+        <aside id="mySidenav">
+            <i class="fas fa-times fa-2x"></i>
+            <ul role="list" class="links">
+                <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/CER-HZ-Bachelor-full-time-2023-2024-DEF-version-20230720.pdf">HZ HBO-ICT CER</a>
+                <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf">HBO-ICT IR</a>
+                <a href="https://learn.hz.nl/my/">Learn</a>
+                <a href="#">MS Teams</a>
+                <a href="#">My HZ</a>
+                <a href="https://github.com/HZ-HBO-ICT">HZ Github</a>
+            </ul>
+        </aside>
+    </header>
     <section class="card">
         <section class="imgs">
             <img class="logo" src="/Images/hz-logo.png" alt="logo">
@@ -44,6 +74,7 @@
             </section>
         </section>
     </section>
+    <script src="/Functionality/index.js"></script>
     <script src="/Functionality/profile.js"></script>
 </body>
 </html>

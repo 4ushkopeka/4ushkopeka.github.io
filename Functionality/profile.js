@@ -1,4 +1,4 @@
-function ShowInfo(){
+function showInfo(){
     let perinfo = document.querySelector("body > section > section.skills > section.personalsec");
     let extrainfo = document.querySelector("body > section > section.skills > section.extracurricular");
     let personalbtn = document.querySelector("body > section > section.buttons > button.personal");
@@ -22,5 +22,6 @@ extrabtn.addEventListener("click", () => {
         extrainfo.style.display="none";
         extrabtn.textContent="Extracurricular";
     }
-    });
+    });    
+    load();
 }

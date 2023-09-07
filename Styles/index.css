@@ -13,6 +13,8 @@ main{
 header{
     background-color: #242427;
     position: sticky;
+    top: 1.5rem;
+    z-index: 5;
     border-radius: 1.3rem;
     margin: 1.5rem;
     display: flex;
@@ -31,11 +33,16 @@ a{
     text-decoration: none;
 }
 .buttons a:hover{
-    scale: 1.07;
+    scale: 1.04;
 }
-ul>a:hover, aside a:hover{
-    scale: 1.2;
+.linklist a:hover{
+    color: #af8a4a;
     text-decoration: underline;
+}
+aside a:hover{
+    scale: 1.2;
+    color: #af8a4a;
+
 }
 .vertical_separator{
     display: inline;
@@ -96,6 +103,11 @@ ul>a:hover, aside a:hover{
 .fa-times{
     cursor: pointer;
     margin-bottom: 3rem;
+    margin-left: 10rem;
+    transition: ease-in-out 0.2s;
+}
+.fa-times:hover{
+    color: rgb(173, 50, 50);
 }
 #hz{
     width: 6vw;
@@ -127,9 +139,8 @@ ul>a:hover, aside a:hover{
     display: flex;
     flex-wrap: nowrap;
     width: 0%;
-    z-index: 1;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-start;
     position: fixed;
     background: rgba(11, 11, 11, 0.7);
@@ -145,13 +156,18 @@ ul>a:hover, aside a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    padding-inline-start: 0%;
 }
 .links>a{
+    position: relative;
+    z-index: 5;
     margin-bottom: 0.5rem;
+    min-width: max-content;
 }
 .highlighted{
     font-size: 1.6rem;
     font-weight: bold;
+    color: #af8a4a;
 }
 .buttons{
     margin-top: 1.7rem;
@@ -173,12 +189,14 @@ ul>a:hover, aside a:hover{
     
 }
 .github:hover{
-    background-color: blueviolet;
-    border-color: hsl(193.61deg 98.98% 38.43%);
+    background-color: rgb(255, 255, 255);
+    border-color: hsl(0, 0%, 0%);
+    color: #000;
 }
 .previousEdu:hover{
-    background-color: rgb(0, 126, 128);
-    border-color: hsl(62, 100%, 43%);
+    background-color: rgb(255, 255, 255);
+    border-color: hsl(0, 0%, 0%);
+    color:#000
 }
 footer{
     display: flex;
