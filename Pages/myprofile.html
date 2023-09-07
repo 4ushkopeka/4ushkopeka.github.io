@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="/Styles/profile.css">
     <title>My profile</title>
 </head>
-<body onload="showInfo()">
+<body onload="load()">
     <header>
         <nav>
             <img src="/Images/hz-logo.png" alt="hz_logo" id="hz">
@@ -38,43 +38,63 @@
             </ul>
         </aside>
     </header>
-    <section class="card">
-        <section class="imgs">
-            <img class="logo" src="/Images/hz-logo.png" alt="logo">
-            <img class="pfp" src="/Images/1692462129077.JPG" alt="pic">
-            <img class="gerb" src="/Images/coa.png" alt="gerb">
-        </section>
-        <section class="initials">
-            <h3>Georgi Chitarliev</h3>
-            <h5>Varna, Bulgaria</h5>
-            <p>Student, developer, ape, Balkan</p>
-        </section>
-        <section class="buttons">
-            <button class="personal">Personal</button>
-            <button class="extracurr">Extracurricular</button>
-        </section>
-        <section class="skills">
-            <h3>Skills</h3>
-            <ul class="slist", role="list">
-                <li>CSS</li>
-                <li>HTML</li>
-                <li>C#</li>
-                <li>JavaScript</li>
-                <li>Ape sounds</li>
-                <li>Rakija</li>
-            </ul>
-            <section class="personalsec" style="display: none;">
-                <h3>Personal Info:</h3>
-                <p><span>Age:</span> 19</p>
-                <p><span>Pre-education:</span> High School of Mathematics, Varna, Bulgaria</p>
+    <main>
+        <img src="/Images/1692462129077.JPG" class="me" alt="photo">
+        <section class="bio">
+            <h2>GEORGI CHITARLIEV</h2>
+            <h5 id="tendencies"><i>Violent Tendencies...</i></h5>
+            <section class="description">
+                <section class="bio">
+                    <h3>Bio</h3>
+                    <p>My name is Georgi. I am from Varna, Bulgaria. I enjoy going to the beach and spending time with friends.
+                    The <i><b>Indiana Jones trilogy</b></i>, as well as the <i><b>Pirates of the Caribbean</b></i> one, have a special place in my heart.
+                    As far as hobbies go, <b><i>gardening</i></b> and playing <b><i>computer games</i></b> are pretty delightful.
+                    </p>
+                </section>
+                <div class="divider"></div>
+                <section class="characteristics">
+                    <p><b>Age: </b>19</p>
+                    <p><b>Occupation: </b>student</p>
+                    <p><b>Personality: </b>introverted</p>
+                    <p><b>Location: </b>Middelburg, Netherlands</p>
+                </section>
             </section>
-            <section class="extracurricular" style="display: none;">
-                <h3>Extracurricular activities:</h3>
-                <p>Work will probably wait untill the second year. I have no work experience currently, but i have enrolled a couple programming courses with c# and JS. I mostly go to the gym/beach, hang out with friends and play computer games in my free time. Also Volleyball/Basketball</p>
+            <section class="personal">
+                <section class="bars">
+                    <h3>Skills</h3>
+                    <p>Problem solving:</p>
+                    <progress id="problemsolving" max="100" value="90"></progress>
+                    <p>Teamwork:</p>
+                    <progress id="problemsolving" max="100" value="75"></progress>
+                    <p>Time management:</p>
+                    <progress id="problemsolving" max="100" value="60"></progress>
+                    <p>Motivation:</p>
+                    <progress id="problemsolving" max="100" value="80"></progress>
+                </section>
+                <div class="divider"></div>
+                <section class="thoughts">
+                    <h3>Extras</h3>
+                    <section class="fr">
+                        <h4>Frustrations:</h4>
+                        <p>CSS animations. My nemesis. Also stupid intrusive thoughts. And heat.</p>
+                    </section>
+                    <section class="goals">
+                        <h4>Goals:</h4>
+                        <p>Become a programming god, and have loads of fun. Also Ski, a lot.</p>
+                    </section>
+                </section>
             </section>
         </section>
-    </section>
-    <script src="/Functionality/index.js"></script>
-    <script src="/Functionality/profile.js"></script>
+    </main>
+    <footer>
+        <p>Gosho - All rights reserved &copy;</p>
+        <section class="media">
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fab fa-youtube fa-2x"></i>
+            <i class="fab fa-reddit-alien fa-2x"></i>
+            <i class="fab fa-google fa-2x"></i>
+        </section>
+    </footer>
+    <script src="/functionality.js"></script>
 </body>
 </html>

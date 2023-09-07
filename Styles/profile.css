@@ -1,116 +1,80 @@
-/* @import url('https://fonts.googleapis.com/css?family=Montserrat');
-body{
-    padding-top: 20px;
-    padding-bottom: 20px;
+.me{
+    width: 30vw;
+    height: 80vh;
+    border: 5px double #af8a4a;
+    margin-right: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 2rem 0.8rem black;
+}
+main{
+    margin-left: 3rem;
     display: flex;
-    background-color: hsl(252.86deg 29.17% 18.82%);
-    color: #adafc8;
+    align-items: flex-start;
+    flex-direction: row;
     justify-content: center;
-    font-family: Montserrat, sans-serif;
 }
-.logo, .gerb{
-    width:20%;
-}
-.imgs{
+.description{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    width: 90%;
+    margin-left: 0;
+    margin-bottom: 0.7rem;
 }
-.personalsec{
-    margin-top: 2%;
+#tendencies{
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
 }
-p>span{
-    font-weight: bolder;
-}
-.personalsec>p, .extracurricular>p{
-    margin: 2%;
-}
-.extracurricular{
-    margin: 2% 0%;
-}
-.initials{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1%;
-}
-.buttons{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 3%;
-    margin-bottom: 3%;
-}
-.extracurr{
-    margin-left: 2%;
+.bars{
+    width: 40%;
 }
 .personal{
-    margin-right: 2%;
-}
-.extracurr, .personal{
-    font-size: small;
-    background-color: transparent;
-    border-radius: 5px;
-    border: 2px solid #0197c3;
-    color: #048588;
-    font-weight: bold;
-    padding: 3%;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.extracurr:hover, .personal:hover{
-    background-color: #00000042;
-    border-color: #00000042;
-    color: white;
-}
-.pfp{
-    max-width: 100%;
-    width: 40%;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    padding: 5px;
-    object-fit: cover;
-    object-position: 50% 30%;
-    border: 2px solid black;
-    margin-bottom: 15px;
-}
-.card{
-    padding-top: 30px;
-
-    background-color: hsl(252.86deg 23.73% 23.14%);
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 30%;
-    height: 30%;
-    border-radius: 15px;
-    box-shadow: 10px 10px 50px black;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 0;
 }
-.skills{
-    background-color: hsl(248.89deg 19.42% 27.25%);
+.bio{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.bio>h3{
+    margin-bottom: 0.5rem;
+}
+.bio>p{
+    margin-left: 0.9rem;
+}
+.divider{
+    margin: 0 3rem;
+    border-left: 3px solid #af8a4a;
+    border-radius: 20px;
+    height: 25vh;
+}
+.characteristics{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
-    border-radius: 15px;
-    padding: 3%;
-    width:100%  
+    justify-content: center;
+    width: 60%;
 }
-.slist{
-    margin: 0%;
-    flex-wrap: wrap;
-    padding: 0%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.bars>p, progress{
+    margin-left: 1rem;
 }
-li{
-    margin: 2%;
-    border: 1px solid black;
-    padding: 1%;
-} */
+.bars>h3{
+    margin-bottom: 0.7rem;
+}
+.personal>.divider{
+    height: 34vh;
+}
+.thoughts>h3{
+    margin-bottom: 1rem;
+}
+.fr{
+    margin-bottom: 1.5rem;
+}
+.fr, .goals{
+    margin-left: 1rem;
+}
