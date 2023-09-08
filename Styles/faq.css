@@ -1,0 +1,30 @@
+.linklist{
+    margin: 1rem 0px;
+    padding-left: 40px;
+}
+body{
+    position: relative;
+}
+main{
+    margin-bottom: 0%;
+}
+.links{
+    margin: 1rem 0px;
+}
+#accordionPanelsStayOpenExample{
+    width: 50%;
+}
+main{
+    margin: 3rem 3rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: all ease-in-out 0.1s;
+}

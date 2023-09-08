@@ -28,4 +28,21 @@ function load(){
         }
         prevScrollpos = currentScrollPos;
       }   
+      let faq = document.querySelector('body > header > nav > ul > a.highlighted');
+      if(faq.textContent === 'FAQ'){
+        window.onclick = () => setTimeout(footerFunc, 355);
+
+    }
+
+    function footerFunc(){
+        let openedAcc = document.getElementsByClassName('show');
+        let footer = document.getElementsByTagName('footer')[0];
+        console.log(openedAcc.length);
+        if(openedAcc.length>=1){
+          footer.style.transform='translateY(15vh)';
+        }
+        else{
+          footer.style.transform='translateY(0vh)';
+        }
+      }
 }
