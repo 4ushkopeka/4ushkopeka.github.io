@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: large;
+}
+body, main{
+    background-color: #100c31;
+    font-family: Montserrat, sans-serif;
+    color: antiquewhite;
+    margin-bottom: 0%;
+}
+header{
+    background-color: #242427;
+    position: sticky;
+    z-index: 5;
+    border-radius: 1.3rem;
+    margin: 0.9rem 1.5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: top 0.3s;
+}
+nav{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+a{
+    transition: ease-in-out 0.2s;
+    color: antiquewhite;
+    font-size: larger;
+    text-decoration: none;
+}
+.buttons a:hover{
+    scale: 1.04;
+}
+.linklist a:hover{
+    color: #af8a4a;
+    text-decoration: underline;
+}
+aside a:hover{
+    scale: 1.2;
+    color: #af8a4a;
+
+}
+.vertical_separator{
+    display: inline;
+    font-size: larger;
+    border-radius: 40px;
+    border-left: 2px solid gray;
+    margin-right: 0.5rem;
+    margin-left: 0.3rem;
+}
+.name_logo{
+    width: 20vw;
+    margin-bottom: 1.2rem;
+}
+.fa-bars{
+    cursor: pointer;
+    margin-right: 2rem;
+}
+@keyframes myAnimation{
+    0%{
+      opacity: 1;
+    }
+    50%{
+      opacity: 0.5;
+      transform: rotateX(90deg);
+    }
+    100%{
+      display: none;
+      opacity: 0;
+      transform: rotateX(90deg);
+
+    }
+  }
+  
+  .animate{
+      animation-name: myAnimation;
+      animation-duration: 500ms;
+      animation-fill-mode: forwards;
+  }
+  @keyframes myunAnimation{
+    0%{
+      opacity: 0;
+      transform: rotateX(90deg);
+    }
+    50%{
+      opacity: 0.5;
+      transform: rotateX(0deg);
+    }
+    100%{
+        display: block;
+      opacity: 1;
+    }
+  }
+  
+  .unanimate{
+      animation-name: myunAnimation;
+      animation-duration: 2000ms;
+      animation-fill-mode: backwards;
+  }
+.fa-times{
+    cursor: pointer;
+    margin-bottom: 3rem;
+    margin-left: 10rem;
+    transition: ease-in-out 0.2s;
+}
+.fa-times:hover{
+    color: rgb(173, 50, 50);
+}
+#hz{
+    width: 6vw;
+    margin-left: 1.3rem;
+}
+#mySidenav{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 0%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    background: rgba(11, 11, 11, 0.7);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.links{
+    display: flex;
+    flex-wrap: nowrap ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-inline-start: 0%;
+}
+.links>a{
+    position: relative;
+    z-index: 5;
+    margin-bottom: 0.5rem;
+    min-width: max-content;
+}
+.highlighted{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #af8a4a;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    margin-bottom: 0%;
+    padding: 1.2rem 5rem;
+    background-color: rgb(12, 12, 12);
+}
+.media{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+.media i{
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+    color: #b4bccb;
+}
+.media i:hover{
+color: #af8a4a;
+}

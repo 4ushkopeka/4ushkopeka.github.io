@@ -1,6 +1,6 @@
 .me{
     width: 30vw;
-    height: 80vh;
+    height: 68vh;
     margin-right: 3rem;
     border-radius: 1rem;
     box-shadow: 0.5rem 0.5rem 2rem 0.8rem black;
@@ -71,7 +71,7 @@ main{
     margin-bottom: 0.7rem;
 }
 .personal>.divider{
-    height: 34vh;
+    height: 32vh;
 }
 .thoughts>h3{
     margin-bottom: 1rem;
