@@ -1,10 +1,4 @@
-.linklist{
-    margin: 1rem 0px;
-    padding-left: 40px;
-}
-.links{
-    margin: 1rem 0px;
-}
+
 #accordionPanelsStayOpenExample{
     width: 90vw;
     height: max-content;
@@ -23,6 +17,7 @@ main > h2{
 #logo{
     width: 4vw;
     margin-top: 1vw;
+    margin-right: 1vw;;
     margin-bottom: 1vw;
     margin-left: 2rem;
 }
