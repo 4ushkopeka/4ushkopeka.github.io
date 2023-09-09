@@ -1,0 +1,26 @@
+table{
+    text-align: center;
+    border-collapse: collapse;
+    box-shadow: 0 0 0.8rem 0.5rem rgba(12, 14, 18, 0.2);
+    width: 40%;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+thead>tr{
+    background-color: rgba(175, 134, 75, 0.3);
+}
+td, th{
+    padding: 1rem;
+}
+th{
+    border: none;
+}
+td[colspan="5"]{
+    font-weight: bold;
+    font-style: italic;
+    background-color: rgba(75, 117, 175, 0.2);
+}

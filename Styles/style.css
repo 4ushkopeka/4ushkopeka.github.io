@@ -1,12 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+.background{
+    background-size: contain;
+    background-position: center center;
+    bottom: 0;
+    filter: blur(100px);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    max-height: 50vw;
+}
 body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-size: large;
+    background-color: #100c31;
 }
 body, main{
-    background-color: #100c31;
     font-family: Montserrat, sans-serif;
     color: antiquewhite;
     margin-bottom: 0%;
@@ -155,8 +168,8 @@ footer{
     justify-content: space-between;
     margin-top: 1.5rem;
     margin-bottom: 0%;
-    padding: 1.2rem 5rem;
-    background-color: rgb(12, 12, 12);
+    padding: 1.2rem 5rem 1rem;
+    background: linear-gradient(#ffffff00, black,black,black, black,black);
 }
 .media{
     display: flex;

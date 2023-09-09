@@ -1,7 +1,7 @@
 .me{
     width: 30vw;
-    height: 68vh;
-    margin-right: 3rem;
+    height: 69vh;
+    margin-right: 4rem;
     border-radius: 1rem;
     box-shadow: 0.5rem 0.5rem 2rem 0.8rem black;
 }
@@ -67,14 +67,20 @@ main{
 .bars>p, .progress{
     margin-left: 1rem;
 }
+.bars>p{
+    margin-bottom: 0.1rem;
+}
+.bars>.progress{
+    margin-bottom: 0.2rem;
+}
 .bars>h3{
-    margin-bottom: 0.7rem;
+    margin-bottom: 1rem;
 }
 .personal>.divider{
-    height: 32vh;
+    height: 33vh;
 }
-.thoughts>h3{
-    margin-bottom: 1rem;
+.thoughts h4:nth-child(1){
+margin-top: 1.5rem;
 }
 .fr{
     margin-bottom: 1.5rem;
