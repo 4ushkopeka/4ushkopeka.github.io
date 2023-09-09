@@ -27,5 +27,14 @@ function load(){
           document.getElementsByTagName("header")[0].style.top = "-300px";
         }
         prevScrollpos = currentScrollPos;
-      }   
+      }
+      console.log(document.referrer);
+      let logo = document.getElementById('logo');
+      let word = document.querySelector('body > header > nav > ul > a.highlighted').textContent;
+      if(word === 'Home' || document.referrer === 'http://127.0.0.1:5500/Pages/index.html' || document.referrer === '4ushkopeka.github.io/Pages/index.html'){
+        logo.classList.add('animatedlogo');
+      }
+      else{
+        logo.classList.remove('animatedlogo');
+      }
 }

@@ -124,9 +124,19 @@ aside a:hover{
 .fa-times:hover{
     color: rgb(173, 50, 50);
 }
-#hz{
+#logo{
     width: 6vw;
     margin-left: 1.3rem;
+}
+@keyframes logoanimation {
+    100%{transform: rotateY(720deg);}
+
+}
+.animatedlogo{
+    animation: forwards;
+    animation-name: logoanimation;
+    animation-timing-function: ease-out;
+    animation-duration: 3s;
 }
 #mySidenav{
     display: flex;
@@ -151,7 +161,7 @@ aside a:hover{
     justify-content: flex-start;
     padding-inline-start: 0%;
 }
-.links>a{
+.links a{
     position: relative;
     z-index: 5;
     margin-bottom: 0.5rem;

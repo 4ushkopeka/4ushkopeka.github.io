@@ -20,6 +20,12 @@ main > h2{
     margin-top: 1rem;
     margin-left: 4rem;
 }
+#logo{
+    width: 4vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-left: 2rem;
+}
 .content{
     margin: 1rem 3rem 1rem;
     display: flex;

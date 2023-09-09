@@ -24,3 +24,9 @@ td[colspan="5"]{
     font-style: italic;
     background-color: rgba(75, 117, 175, 0.2);
 }
+#logo{
+    width: 4vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-left: 2rem;
+}
