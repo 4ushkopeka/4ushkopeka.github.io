@@ -56,11 +56,11 @@ body{
     max-width: 25vw;
     filter: brightness(25%);
 }
-article:nth-child(2) .card-background, article:nth-child(4) .card-background{
+a:nth-child(2) .card-background, a:nth-child(4) .card-background{
     object-fit: fill;
     max-width: 23.7vw;
 }
-article:nth-child(5) .card-background{
+a:nth-child(5) .card-background{
     object-position: -10.3rem -0.9rem;
 }
 .date{
