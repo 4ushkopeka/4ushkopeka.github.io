@@ -19,6 +19,9 @@ td, th{
 th{
     border: none;
 }
+table:nth-child(1) > tbody > tr:nth-child(2), table:nth-child(1) > tbody > tr:nth-child(3), table:nth-child(2) > tbody > tr:nth-child(1){
+border-bottom: 1px solid antiquewhite;
+}
 td[colspan="5"]{
     font-weight: bold;
     font-style: italic;

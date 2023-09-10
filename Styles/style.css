@@ -129,14 +129,14 @@ aside a:hover{
     margin-left: 1.3rem;
 }
 @keyframes logoanimation {
-    100%{transform: rotateY(720deg);}
+    100%{transform: rotateY(1800deg);}
 
 }
 .animatedlogo{
     animation: forwards;
     animation-name: logoanimation;
     animation-timing-function: ease-out;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
 }
 #mySidenav{
     display: flex;
