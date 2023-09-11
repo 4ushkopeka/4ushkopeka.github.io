@@ -37,4 +37,17 @@ function load(){
       else{
         logo.classList.remove('animatedlogo');
       }
+      if(word === 'FAQ'){
+        document.onclick = ()=> {
+        let container = document.getElementsByClassName('content')[0];
+        let accordionNum = document.querySelectorAll('.accordion-button.collapsed').length;
+        if(accordionNum<=2){
+          container.style.alignItems='center';
+        }
+        else{
+          container.style.alignItems='flex-start';
+
+        }
+      }
+    }
 }
