@@ -2,6 +2,8 @@ function grading(){
     load();
     let objArr = [];
     let barUpdates = [];
+    let q1, q2, q3, q4, more = {};
+    let blocks = [q1, q2, q3, q4, more]
     tableManipulation();
 
     function tableManipulation(){
@@ -10,14 +12,17 @@ function grading(){
         let obj = {};
         obj.exam = exam;
         obj.ec = null;
+        obj.grade = null;
+        obj.block = null;
         let children = exam.parentElement.children.length;
-        if(children<=2){
+        if(children<=3){
             obj.ec = exam.parentElement.children[1];
+            obj.grade = exam.parentElement.children[2];
         }
         else{
             obj.ec = exam.parentElement.children[3];
+            obj.grade = exam.parentElement.children[4];
         }
-        obj.grade = 0;
         obj.exam.addEventListener('click', tdHandler, true);
         objArr.push(obj);
       }
@@ -34,23 +39,24 @@ function grading(){
         }
         if(grade!=null){
             currentObj.exam.removeEventListener('click', tdHandler, true);
-            currentObj.exam.grade = Number(grade);
+            currentObj.grade.textContent = Number(grade);
             currentObj.exam.style.pointerEvents = "none";
             await new Promise(r => setTimeout(r, 1000));
             currentObj.exam.classList.remove('exam');
             if(grade<5.5){
-                currentObj.exam.style.backgroundColor = "red";
+                currentObj.exam.style.backgroundColor = "rgba(253, 29, 29, 0.2)";
             }
             else{
-                currentObj.exam.style.backgroundColor = "green";
+                currentObj.exam.style.backgroundColor = "rgba(143, 253, 29, 0.2)";
                 let bar = document.getElementsByClassName('progress')[0];
                 let width = Number(currentObj.ec.textContent);
                 barUpdates.push(width);
-                bar.style.width = (Sum(barUpdates)*10/6).toString()+'%';
+                bar.style.width = (Sum()*10/6).toString()+'%';
             }
         }
     }
-    function Sum(arr){
+
+    function Sum(){
         let sum = 0;
         for (const num of barUpdates) {
             sum+=num;
@@ -58,5 +64,3 @@ function grading(){
         return sum;
     }
 }
-
-
