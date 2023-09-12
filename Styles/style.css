@@ -10,7 +10,7 @@
     top: 0;
     width: 100%;
     z-index: -1;
-    max-height: 50vw;
+    max-height: 100vh;
 }
 body{
     display: flex;

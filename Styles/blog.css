@@ -124,4 +124,7 @@ article:nth-child(5) .card-background{
 .card:hover:before, .card:hover:after {
     transform: scale(1);
  }
+ .background{
+    max-height: 160vh;
+}
   

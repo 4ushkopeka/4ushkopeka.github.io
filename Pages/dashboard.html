@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/Styles/dashboard.css">
     <title>Dashboard</title>
 </head>
-<body onload="load()">
+<body onload="grading()">
     <img src="/Images/pexels-rafael-guajardo-604684.jpg"  class="background" alt="background">
     <header>
         <nav>
@@ -41,102 +41,140 @@
         </aside>
     </header>
     <main>
-        <table>
-            <thead>
-                <tr>
-                    <th>Course</th>
-                    <th>Course Number</th>
-                    <th>Exam</th>
-                    <th>EC</th>
-                    <th>Grade</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td colspan="5">Quartile 1 - Intro. to Computer Science</td>
-                </tr>
-                <tr>
-                    <td>PCO - Program & Career Orientation</td>
-                    <td>CU75001V3</td>
-                    <td>Assessment website</td>
-                    <td>2,5</td>
-                    <td>?</td>
-                </tr>
-                <tr>
-                    <td>Computer Science Basics</td>
-                    <td>CU75002V2</td>
-                    <td>Written exam</td>
-                    <td>5</td>
-                    <td>?</td>
-                </tr><tr>
-                    <td>Programming Basics</td>
-                    <td>CU75003V1</td>
-                    <td>Unknown</td>
-                    <td>5</td>
-                    <td>?</td>
-                </tr>
-                <tr>
-                    <td colspan="5">Quartile 2 - Game Development</td>
-                </tr>
-                <tr>
-                    <td>Object Oriented Programming</td>
-                    <td>Unknown</td>
-                    <td>Unknown</td>
-                    <td>10</td>
-                    <td>?</td>
-                </tr>
-                <tr>
-                    <td colspan="5">Quartile 3 - Modern Software Dev. I</td>
-                </tr>
-                <tr>
-                    <td>Framework Project 1</td>
-                    <td>Unknown</td>
-                    <td>Unknown</td>
-                    <td>10</td>
-                    <td>?</td>
-                </tr>
-                <tr>
-                    <td colspan="5">Quartile 4 - Modern Software Dev. II</td>
-                </tr>
-                <tr>
-                    <td>Framework Project 2</td>
-                    <td>Unknown</td>
-                    <td>Unknown</td>
-                    <td>10</td>
-                    <td>?</td>
-                </tr>
-            </tbody>
-        </table>
-        <table>
-            <thead>
-                <tr>
-                    <td colspan="5">More Courses</td>
-                </tr>
-                <tr>
-                    <th>Blocks</th>
-                    <th>Course</th>
-                    <th>Course Number</th>
-                    <th>EC taken</th>
-                    <th>Grade</th>
-                </tr>
+        <div class="progress-back">
+            <div class="progress">
+                <img src="/Images/cat-nyan-cat.gif" id="bar_cat" alt="rainbow_cat">
+            </div>
+        </div>
+        <section class="tables">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Course Number</th>
+                        <th>Exam</th>
+                        <th>EC</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
                 <tbody>
                     <tr>
-                        <td>All year</td>
-                        <td>Personal Proffesional Development Exploration</td>
-                        <td>Unknown</td>
-                        <td>12,5    </td>
-                        <td>?</td>
+                        <td colspan="5">Quartile 1 - Intro. to Computer Science</td>
                     </tr>
                     <tr>
-                        <td>3, 4</td>
-                        <td>Business IT Consultancy Basics</td>
-                        <td>Unknown</td>
+                        <td>PCO - Program & Career Orientation</td>
+                        <td>CU75001V3</td>
+                        <td class="exam">Assessment website</td>
                         <td>2.5</td>
                         <td>?</td>
                     </tr>
+                    <tr>
+                        <td>Computer Science Basics</td>
+                        <td>CU75002V2</td>
+                        <td class="exam">Written exam</td>
+                        <td>5</td>
+                        <td>?</td>
+                    </tr><tr>
+                        <td>Programming Basics</td>
+                        <td>CU75003V1</td>
+                        <td class="exam">Case study exam</td>
+                        <td>5</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Quartile 2 - Game Development</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Object Oriented Programming</td>
+                        <td rowspan="2">CU75004V1</td>
+                        <td class="exam">Case study exam</td>
+                        <td>5</td>
+                        <td rowspan="2">?</td>
+                    </tr>
+                    <tr class="exams">
+                        <td class="exam">Group assignment</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Quartile 3 - Modern Software Dev. I</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">Framework Project 1</td>
+                        <td rowspan="4">CU75080V1</td>
+                        <td class="exam">On-site case study exam</td>
+                        <td>5</td>
+                        <td rowspan="4">?</td>
+                    </tr>
+                    <tr class="exams">
+                        <td class="exam">Database exam</td>
+                        <td>1.25</td>
+                    </tr>
+                    <tr class="exams">
+                        <td class="exam">Group presentation</td>
+                        <td>2.5</td>
+                    </tr>
+                    <tr class="exams">
+                        <td class="exam">Group portfolio</td>
+                        <td>1.25</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Quartile 4 - Modern Software Dev. II</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Framework Project 2</td>
+                        <td rowspan="3">CU75011V3</td>
+                        <td class="exam">Final delivery</td>
+                        <td>2.5</td>
+                        <td rowspan="3">?</td>
+                    </tr>
+                    <tr class="exams">
+                        <td class="exam">Report of acceptance </td>
+                        <td>2.5</td>
+                    </tr>
+                    <tr class="exams">
+                        <td class="exam">IT Development portfolio</td>
+                        <td>5</td>
+                    </tr>
                 </tbody>
-            </thead>
-        </table>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <td colspan="5">More Courses</td>
+                    </tr>
+                    <tr>
+                        <th>Quartiles</th>
+                        <th>Course</th>
+                        <th>Course Number</th>
+                        <th>EC taken</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>All year</td>
+                            <td>Personal Proffesional Development Exploration</td>
+                            <td class="exam">Criterium focused nterview</td>
+                            <td>12.5</td>
+                            <td>?</td>
+                        </tr>
+                        <tr>
+                            <td>3, 4</td>
+                            <td>Business IT Consultancy Basics</td>
+                            <td class="exam">Video</td>
+                            <td>2.5</td>
+                            <td>?</td>
+                        </tr>
+                        <tr>
+                            <td>All year</td>
+                            <td>IT Personality</td>
+                            <td class="exam">Portfolio</td>
+                            <td>2.5</td>
+                            <td>?</td>
+                        </tr>
+                    </tbody>
+                </thead>
+            </table>
+        </section>
     </main>
     <footer>
         <p>Gosho - All rights reserved &copy;</p>
@@ -155,6 +193,7 @@
             </li>
         </ul>
     </footer>
-    <script src="/functionality.js"></script>
+    <script src="/Js/dashboard.js"></script>
+    <script src="/Js/functionality.js"></script>
 </body>
 </html>
