@@ -1,7 +1,7 @@
 function grading(){
     load();
     let objArr = [];
-    let barUpdates = [];
+    let barUpdates = 0;
     let quartiles = [];
     objectMaker(quartiles);
     let totalExam = 0;
@@ -63,8 +63,8 @@ function grading(){
                 quartiles[currentObj.quartile-1].creditsTaken+=Number(currentObj.ec.textContent);
                 
                 let bar = document.getElementsByClassName('progress')[0];
-                barUpdates.push(width);
-                bar.style.width = (arrayHandler(barUpdates, 'sum')*10/6).toString()+'%';
+                barUpdates+=width;
+                bar.style.width = (barUpdates*10/6).toString()+'%';
             }
             overviewHandler(currentObj);
         }

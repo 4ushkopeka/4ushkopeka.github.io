@@ -61,7 +61,7 @@ main{
     z-index: -2;
     min-height: 60vh;
     max-width: 25vw;
-    filter: brightness(25%);
+    filter: brightness(30%);
 }
 article:nth-child(2) .card-background, article:nth-child(4) .card-background{
     object-fit: fill;

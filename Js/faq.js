@@ -4,7 +4,7 @@ if(word === 'FAQ'){
     document.onclick = ()=> {
       let container = document.getElementsByClassName('content')[0];
       let accordionNum = document.querySelectorAll('.accordion-button.collapsed').length;
-      if(accordionNum<=2){
+      if(accordionNum<=3){
         container.style.alignItems='center';
       }
       else{

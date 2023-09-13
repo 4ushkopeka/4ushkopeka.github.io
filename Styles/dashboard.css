@@ -139,3 +139,10 @@ tr>td:nth-child(2)[rowspan]{
     font-weight: bolder;
     font-style: italic;
 }
+.progress-shenanigans{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
