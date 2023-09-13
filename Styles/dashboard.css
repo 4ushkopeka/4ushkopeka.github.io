@@ -3,6 +3,7 @@ table{
     border-collapse: collapse;
     box-shadow: 0 0 0.8rem 0.5rem rgba(12, 14, 18, 0.2);
     width: 40%;
+
 }
 main{
     display: flex;
@@ -37,7 +38,7 @@ border-bottom: 1px solid antiquewhite;
 td[colspan="5"]{
     font-weight: bold;
     font-style: italic;
-    background-color: rgba(147, 41, 197, 0.2);
+    background-color: rgba(174, 0, 255, 0.233);
 }
 tr>td:nth-child(2)[rowspan]{
     border-right: 1px solid rgba(250, 235, 215, 0.498);
@@ -123,4 +124,18 @@ tr>td:nth-child(2)[rowspan]{
     justify-content: space-around;
     align-items: center;
     width: 40%;
+    gap: 4rem;
+}
+#overview tr:not(tr[id="adios"]){
+    border-top: 1px solid antiquewhite;
+}
+#adios{
+    background-color: rgba(0, 4, 255, 0.299);
+}
+#overall > td{
+    border-bottom: 0.6rem solid rgb(0, 255, 234); 
+    border-top: 3px solid antiquewhite;
+    background-color: #ffbf0071;
+    font-weight: bolder;
+    font-style: italic;
 }
