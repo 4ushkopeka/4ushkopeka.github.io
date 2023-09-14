@@ -51,7 +51,7 @@ tr>td:nth-child(2)[rowspan]{
     margin-left: 2rem;
 }
 .background{
-    max-height: 200vh;
+    max-height: 195vh;
 }
 .exams td{
     border-top: 1px solid rgba(250, 235, 215, 0.498);

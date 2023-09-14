@@ -19,6 +19,9 @@ body{
     font-size: large;
     background-color: #100c31;
 }
+main{
+    flex-grow: 1;
+}
 body, main{
     font-family: Montserrat, sans-serif;
     color: antiquewhite;
@@ -184,7 +187,7 @@ footer{
     margin-top: 1.5rem;
     margin-bottom: 0%;
     padding: 1.2rem 5rem 1rem;
-    background: linear-gradient(#ffffff00, black,black,black, black,black);
+    background: linear-gradient(#ffffff00, black,black,black, black,black, black);
 }
 .media{
     display: flex;
