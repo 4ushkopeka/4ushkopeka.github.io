@@ -1,6 +1,6 @@
 function flex(){
   let word = document.querySelector('body > header > nav > .linklist > a.highlighted').textContent;
-if(word === 'FAQ'){
+  if(word === 'FAQ'){
     document.onclick = ()=> {
       let container = document.getElementsByClassName('content')[0];
       let accordionNum = document.querySelectorAll('.accordion-button.collapsed').length;

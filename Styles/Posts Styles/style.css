@@ -159,7 +159,7 @@ main{
     z-index: 1;
     width: 50%;
     margin-right: 10rem;
-    background-color: rgb(30, 24, 87);
+    background-color: rgb(0, 0, 0);
 }
 .quote:before{
     content: '';
@@ -178,7 +178,7 @@ main{
     bottom: -3.5rem;
     right: 3.6rem;
     border: 1.75rem solid;
-    border-color: rgb(30, 24, 87) rgb(30, 24, 87) transparent transparent;
+    border-color: rgb(0, 0, 0) rgb(0, 0, 0) transparent transparent;
     transform: skewX(200deg);
     
 }
