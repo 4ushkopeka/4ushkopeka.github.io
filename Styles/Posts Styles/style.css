@@ -90,7 +90,7 @@ main{
     flex-direction: row;
     justify-content: space-evenly;
 }
-.first-photo{
+.cat-photo{
     width: 20%;
     border-radius: 1rem;
     box-shadow: 0.5rem 0.5rem 1rem 0.2rem rgb(0, 0, 0);
@@ -120,7 +120,7 @@ main{
 .content{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: flex-start;
     width: 45%;
 }
@@ -141,35 +141,88 @@ main{
 }
 .images{
     width: 45%;
+    position: relative;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;
 }
 .blog{
     margin-top: 4rem;
 }
-/* .test{
+.quote{
     position: relative;
     padding: 1rem;
-    border: 0.5rem solid #af8a4a77;
+    border: 0.5rem solid #af8a4a;
     border-radius: 2rem;
     z-index: 1;
-    width: 40%;
+    width: 50%;
+    margin-right: 10rem;
+    background-color: rgb(30, 24, 87);
 }
-.test:before{
+.quote:before{
     content: '';
     position: absolute;
     bottom: -4.5rem;
     right: 3rem;
     border: 2rem solid;
-    border-color: #af8a4a77 #af8a4a77 transparent transparent;
+    border-color: #af8a4a #af8a4a transparent transparent;
     transform: skewX(200deg);
 
 }
-.test:after{
+.quote:after{
     border-left: 0.5rem solid aquamarine;
     content: '';
     position: absolute;
     bottom: -3.5rem;
     right: 3.6rem;
     border: 1.75rem solid;
-    border-color: rgb(255, 127, 127) rgb(255, 127, 127) transparent transparent;
+    border-color: rgb(30, 24, 87) rgb(30, 24, 87) transparent transparent;
     transform: skewX(200deg);
-} */
+    
+}
+.img-box{
+    border-radius: 50%;
+    border: 2px solid antiquewhite;
+    height: 15rem;
+    width: 15rem;
+    padding: 0.5rem;
+}
+#bear{
+    border-color: rgb(255, 77, 0);
+}
+#pop-cat{
+    border-color: rgb(124, 165, 42);
+}
+.img-box>img{
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid;
+}
+#kled{
+    aspect-ratio: 1/1;
+    transform: rotateY(180deg);
+    border-radius: 50%;
+    border: 5px solid rgb(124, 165, 42);
+    object-fit: cover;
+    object-position: -9.5rem;
+    border-color: rgb(42, 91, 165);
+}
+#film-cameo{
+    aspect-ratio: 1/1;
+    transform: rotateY(180deg);
+    border-color: rgb(165, 151, 42);
+}
+.fade-in{
+    opacity: 0%;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes appear{
+    0% {opacity:0%;}
+    100%{opacity: 100%; display: block;}
+}
