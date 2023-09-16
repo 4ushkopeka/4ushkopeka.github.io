@@ -1,0 +1,13 @@
+#bear{
+object-fit: contain;
+aspect-ratio: 1/1;
+object-position: -.1rem;
+}
+#film-cameo{
+    object-fit: cover;
+    transform: rotateY(0deg);
+}
+body > main > section.blog > section > p:nth-child(7){
+    width: 70%;
+    margin-right: 8rem;
+}
