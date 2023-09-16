@@ -8,7 +8,7 @@ function grading(){
     let totalCredits = 0;
     tableManipulation();
 
-    function tableManipulation(){
+    function tableManipulation() {
       let exams = document.querySelectorAll('.exam');
       totalExam = exams.length; //!!!
       for (const exam of exams) {
@@ -17,11 +17,10 @@ function grading(){
         obj.ec = null;  //cells
         obj.grade = null;  //cells
         let children = exam.parentElement.children.length;
-        if(children<=3){
+        if(children<=3) {
             obj.ec = exam.parentElement.children[1];
             obj.grade = exam.parentElement.children[2];
-        }
-        else{
+        } else {
             obj.ec = exam.parentElement.children[3];
             obj.grade = exam.parentElement.children[4];
         }
@@ -37,12 +36,12 @@ function grading(){
         let grade = prompt(`Enter the grade for the ${e.target.textContent}. NOTE! You WILL NOT be able to change it later!`, 10);
         let currentObj = null;
         for (const exam of objArr) {
-            if(exam.exam.isSameNode(e.target)){
+            if(exam.exam.isSameNode(e.target)) {
                 currentObj = exam;
                 break;
             }
         }
-        if(grade!=null && grade>0 && grade<=10){
+        if(grade!=null && grade>0 && grade<=10) {
             currentObj.exam.removeEventListener('click', tdHandler, true);
             currentObj.grade.textContent = Number(grade);
 
@@ -53,8 +52,7 @@ function grading(){
             if(grade<5.5){
                 currentObj.exam.style.backgroundColor = "rgba(253, 29, 29, 0.25)";
                 quartiles[currentObj.quartile-1].examsFailed++;
-            }
-            else{
+            } else {
                 currentObj.exam.style.backgroundColor = "rgb(51 255 0 / 25%)";
 
                 let width = Number(currentObj.ec.textContent);
@@ -70,29 +68,28 @@ function grading(){
         }
     }
     
-    function quartileManipulation(obj){
+    function quartileManipulation(obj) {
         let q = 0;
         if(Array.from(obj.exam.classList).includes('q1')){
             q = 1;
             quartiles[0].maxCredits+=Number(obj.ec.textContent);
             quartiles[0].maxTaken+=1;   
-        }
-        else if(Array.from(obj.exam.classList).includes('q2')){
+        } 
+        else if(Array.from(obj.exam.classList).includes('q2')) {
             q = 2;
             quartiles[1].maxCredits+=Number(obj.ec.textContent);
             quartiles[1].maxTaken+=1;
-        }
-        else if(Array.from(obj.exam.classList).includes('q3')){
+        } 
+        else if(Array.from(obj.exam.classList).includes('q3')) {
             q = 3;
             quartiles[2].maxCredits+=Number(obj.ec.textContent);
             quartiles[2].maxTaken+=1;
-        }
-        else if(Array.from(obj.exam.classList).includes('q4')){
+        } 
+        else if(Array.from(obj.exam.classList).includes('q4')) {
             q = 4;
             quartiles[3].maxCredits+=Number(obj.ec.textContent);
             quartiles[3].maxTaken+=1;
-        }
-        else {
+        } else {
             q = 5;
             quartiles[4].maxCredits+=Number(obj.ec.textContent);
             quartiles[4].maxTaken+=1;
@@ -116,27 +113,26 @@ function grading(){
         let examTakenCell = null;
         let ecTakenCell = null;
         let avgGradeCell = null;
-        if(quartile === 1){
+        if(quartile === 1) {
             examTakenCell = document.querySelector('#overview > tbody > tr:nth-child(1) > td:nth-child(2)');
             ecTakenCell = document.querySelector('#overview > tbody > tr:nth-child(1) > td:nth-child(3)');
             avgGradeCell = document.querySelector('#overview > tbody > tr:nth-child(1) > td:nth-child(4)');
         }
-        else if(quartile === 2){
+        else if(quartile === 2) {
             examTakenCell = document.querySelector('#overview > tbody > tr:nth-child(2) > td:nth-child(2)');
             ecTakenCell = document.querySelector('#overview > tbody > tr:nth-child(2) > td:nth-child(3)');
             avgGradeCell = document.querySelector('#overview > tbody > tr:nth-child(2) > td:nth-child(4)');
         }
-        else if(quartile === 3){
+        else if(quartile === 3) {
             examTakenCell = document.querySelector('#overview > tbody > tr:nth-child(3) > td:nth-child(2)');
             ecTakenCell = document.querySelector('#overview > tbody > tr:nth-child(3) > td:nth-child(3)');
             avgGradeCell = document.querySelector('#overview > tbody > tr:nth-child(3) > td:nth-child(4)');
         }
-        else if(quartile === 4){
+        else if(quartile === 4) {
             examTakenCell = document.querySelector('#overview > tbody > tr:nth-child(4) > td:nth-child(2)');
             ecTakenCell = document.querySelector('#overview > tbody > tr:nth-child(4) > td:nth-child(3)');
             avgGradeCell = document.querySelector('#overview > tbody > tr:nth-child(4) > td:nth-child(4)');
-        }
-        else{
+        } else {
             examTakenCell = document.querySelector('#overview > tbody > tr:nth-child(5) > td:nth-child(2)');
             ecTakenCell = document.querySelector('#overview > tbody > tr:nth-child(5) > td:nth-child(3)');
             avgGradeCell = document.querySelector('#overview > tbody > tr:nth-child(5) > td:nth-child(4)');
@@ -144,7 +140,7 @@ function grading(){
         return [examTakenCell, ecTakenCell, avgGradeCell];
     }
 
-    function arrayHandler(arr, key){
+    function arrayHandler(arr, key) {
         
         if(key === 'sum'){
             let sum = 0;

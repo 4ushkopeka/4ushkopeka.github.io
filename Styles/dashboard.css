@@ -86,7 +86,6 @@ tr>td:nth-child(2)[rowspan]{
 .exam{
     transition: transform ease-in 0.5s, box-shadow ease-in 1s, background-color ease-in 0.1s;
     cursor: pointer;
-    
 }
 .exam:hover{
     transform: translateX(-1rem) translateY(-1rem);
