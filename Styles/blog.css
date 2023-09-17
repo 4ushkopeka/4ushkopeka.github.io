@@ -120,7 +120,11 @@ article:nth-child(5) .card-background{
 .card:hover .tag.work {
     background: rgba(33, 49, 83, 0.923);
     color: white;
- }
+}
+.card:hover .tag.profession {
+    background: rgba(83, 33, 33, 0.923);
+    color: white;
+}
 .card:hover:before, .card:hover:after {
     transform: scale(1);
  }

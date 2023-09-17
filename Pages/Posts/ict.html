@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="/Styles/reset.css">
     <link rel="stylesheet" href="/Styles/style.css">
     <link rel="stylesheet" href="/Styles/Posts Styles/style.css">
-
+    <link rel="stylesheet" href="/Styles/Posts Styles/ict.css">
     <title>Document</title>
 </head>
-<body onload="load()">
+<body onload="slides()">
     <img src="/Images/pexels-rafael-guajardo-604684.jpg"  class="background" alt="background">
     <header>
         <nav>
@@ -42,10 +42,10 @@
     </header>
     <main>
         <section class="blog-intro">
-            <img src="/Images/pexels-toni-cuenca-585752.jpg" alt="" class="background-intro">
+            <img src="/Images/cpu.jpg" alt="" class="background-intro">
             <section class="text">
-                <h1>Study Choice</h1>
-                <h3>Why did i choose ICT?</h3>
+                <h1>Profession</h1>
+                <h3>Who would I work with?</h3>
             </section>
             <div class="circle-border">
                 <a href="#scroll">
@@ -76,68 +76,23 @@
                 <p><b>Location:</b> Middelburg</p>
             </section>
         </section>
-        <section class="blog">
-            <article class="content">
-                <h3>So... Why ICT?</h3>
-                <p>Logic is fascinating. I mean, being able to explain all the stuff going around in the world
-                    is just too big of a bargain to decline. From the smallest of organisms - looking at you
-                    pesky <i>Streptococcus pneumoniae</i>, to the largest objects - like galaxies, and, perhaps 
-                    even universes. And I have always set great store by it. And always will. But...
-                </p>
-                <h4 class="sub-question">What does that have to do with my choice?</h4>
-                <p>
-                    Typically a logically oriented person would fancy science, moslty exact. For example,
-                    creative people prefer to express themselves, because they can do it in their own way,
-                    whereas a logical person would prefer to learn about the reason why something is/works
-                    the way it does. And mathematics is the universal way - if something exists, it can be 
-                    decoded by it. That is why maths is literally everywhere you look - it is the 
-                    <b><i>Language of the universe</i></b>. Ok...
-                </p>
-                <h4 class="sub-question">And how does it impact my choice?</h4>
-                <p>
-                    I have always admired math, and always aspired to using logic. And ICT has a lot of it.
-                    But why not become a mathematician then? I introduce you to... <i>Problem Solving</i>!
-                    Yes, maths  has a great deal of this, but usually the problems there are NOT present in
-                    everyday life. I mean, where would you really use <b><i>limy→∞(1+1/y)^y=e</i></b> ? That's
-                    right - in very specific and impossible to grasp for most people problems.
-                    Programming and Computer science, however, can be used <b><i>FOR EVERYTHING</i></b>!
-                </p>
-                <h4 class="sub-question">Wait, how?</h4>
-                <p>
-                    It's quite simple, actually. You can program anything, as far as you know what you are doing.
-                    From basic calculators to entertaining games, programs are everywhere - just like math.
-                    Even in the most basic of items - like a person's oven, for instance. And that is, along with logic
-                    and problem solving, why I chose ICT. Not to mention that computers are becoming that much more of
-                    a necessity in modern life, and having the ability to understand and command them is pretty <i>thrilling</i>
-                    to me.
-                </p>
-                <h4 class="sub-question">...Future?</h4>
-                <p>
-                    That said, what do i expect to have accomplished, and, to do after graduation? I expect 
-                    to have learnt core programming concepts and the ability to use them. I hope i could 
-                    get a job as a programmer and after graduating i will most likely work for a while 
-                    before enrolling the masters.
-                </p>
-            </article>
-            <section class="images">
-                <p class="quote fade-in">Wait... So you are telling me I might be programmed? Like, in a <b>GAME</b>? 
-                    Please let it just be a<i> nightmare...</i>
-                </p>
-                <div class="img-box fade-in">
-                    <img src="/Images/HelpyThink.gif" alt="helpy bear" id="bear">
-                </div>
-                <p class="quote fade-in">I've seen too many things to have been programmed... <i><b>Right?</b></i></p>
-                <div class="img-box fade-in">
-                    <img src="/Images/cat-nyan-cat.gif" alt="potart cat" id="pop-cat">
-                </div>
-                <p class="quote fade-in">Programmed? Naw, it must be the <span style="text-decoration: underline solid antiquewhite;"><i>mushroom juice</i></span>...</p>
-                <div class="img-box fade-in">
-                    <img src="/Images/kled-lol.gif" alt="kled" id="kled">
-                </div>
-                <p class="quote fade-in">That would explain why the rum <b><i> always</i></b> ends...</p>
-                <div class="img-box fade-in">
-                    <img src="/Images/jack-sparrow.gif" alt="jack" id="film-cameo">
-                </div>
+        <section id="job-articles">
+            <section id="helper-nav">
+                <button class="selected">First</button>
+                <button>Second</button>
+                <button>Third</button>
+            </section>
+            <section id="articles">
+                <section id="explain-and-photo">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur praesentium 
+                        similique, et, architecto repudiandae perspiciatis iure, doloremque necessitatibus 
+                        velit cumque provident. Repudiandae quam nemo maxime, ipsam deserunt itaque quae 
+                        omnis?</p>
+                        <img src="/Images/wink-walt.gif" alt="company_img">
+                </section>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore culpa impedit, autem 
+                    numquam ea facilis delectus quo unde non veniam eum praesentium voluptates voluptas! 
+                    Ipsam ex et eveniet odit natus.</p>
             </section>
         </section>
     </main>
@@ -158,6 +113,7 @@
             </li>
         </ul>
     </footer>
+    <script src="/Js/ict.js"></script>
     <script src="/Js/functionality.js"></script>
 </body>
 </html>

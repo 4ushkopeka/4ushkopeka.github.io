@@ -68,11 +68,13 @@ main{
 }
 .text{
     margin-bottom: 35vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .text>h3{
     font-size: 3rem;
-    margin-left: 3rem;
-    text-decoration:solid;
 }
 .text>h1{
     font-style: italic;

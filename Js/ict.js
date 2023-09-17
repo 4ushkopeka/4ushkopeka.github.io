@@ -1,0 +1,6 @@
+function slides(){
+
+
+
+    load();
+}
