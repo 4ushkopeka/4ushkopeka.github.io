@@ -1,4 +1,4 @@
-function grading(){
+function grading() {
     load();
     let objArr = [];
     let barUpdates = 0;
@@ -7,6 +7,9 @@ function grading(){
     let totalExam = 0;
     let totalCredits = 0;
     tableManipulation();
+    let thresholds = Array.from(document.querySelectorAll('.progress-back > *:not([class = "progress"])'));
+    let cat = document.getElementById('bar_cat');
+    let trophy = document.getElementById('trophy');
 
     function tableManipulation() {
       let exams = document.querySelectorAll('.exam');
@@ -32,7 +35,7 @@ function grading(){
       
     }
 
-    async function tdHandler(e){
+    async function tdHandler(e) {
         let grade = prompt(`Enter the grade for the ${e.target.textContent}. NOTE! You WILL NOT be able to change it later!`, 10);
         let currentObj = null;
         for (const exam of objArr) {
@@ -63,6 +66,7 @@ function grading(){
                 let bar = document.getElementsByClassName('progress')[0];
                 barUpdates+=width;
                 bar.style.width = (barUpdates*10/6).toString()+'%';
+                thresholdHandler();
             }
             overviewHandler(currentObj);
         }
@@ -97,7 +101,7 @@ function grading(){
         return q;
     }
 
-    function overviewHandler(exam){
+    function overviewHandler(exam) {
         let summaryCells = getOverviewQuartileCells(exam.quartile);
         let overallValues = overallHandler();
         let index = exam.quartile-1;
@@ -158,7 +162,7 @@ function grading(){
         }
     }
 
-    function objectMaker(arr){
+    function objectMaker(arr) {
         for (let index = 0; index < 5; index++) {
             let quartile = {
                 examsTaken:0,
@@ -172,7 +176,7 @@ function grading(){
         }
     }
 
-    function overallHandler(){
+    function overallHandler() {
         let takenExams = 0;
         let takenCredits = 0;
         let totalExams = 0;
@@ -184,5 +188,20 @@ function grading(){
             avgGrade+=arrayHandler(obj.grades, 'sum');
         }
         return [takenExams, takenCredits, (avgGrade/totalExams).toFixed(1)];
+    }
+
+    function thresholdHandler() {
+        if(!Array.from(thresholds[0].classList).includes('completed') || !Array.from(thresholds[2].classList).includes('completed')){
+            if(barUpdates >= 45 && barUpdates < 60){
+                thresholds[0].classList.add('completed');
+                thresholds[1].classList.add('completed');
+            } 
+            else if(barUpdates === 60){
+                thresholds[2].classList.add('completed');
+                thresholds[3].classList.add('completed');
+                cat.classList.add('fly');
+                trophy.classList.add('finished')
+            }
+        }
     }
 }

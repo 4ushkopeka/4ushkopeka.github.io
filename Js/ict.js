@@ -32,13 +32,11 @@ function slides() {
                 company.classList.add('invisible');
             }
         }
-        
         article.classList.remove('invisible');
         article.classList.remove('hidden');
         article.classList.add('visible');
-        
-        
     }
+    
     function selectedHandler(button) {
         let checkClass = false;
         if(!Array.from(button.classList).includes('selected')) {
