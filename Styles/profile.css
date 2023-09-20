@@ -112,7 +112,7 @@ margin-top: 1.5rem;
     animation: problem 3s normal forwards;
     box-shadow: 0 10px 40px -10px #fff;
     border-radius: 100px;
-    background: linear-gradient(to right, #017ac9, #af8a4a);
+    background: linear-gradient(to right, #017ac9, rgb(116, 182, 116));
     height: 2vh;
 }
       
@@ -124,7 +124,7 @@ margin-top: 1.5rem;
     animation: teamwork 3s normal forwards;
     box-shadow: 0 10px 40px -10px #fff;
     border-radius: 100px;
-    background: linear-gradient(to right, #017ac9, #af8a4a);
+    background: linear-gradient(to right, #017ac9, rgb(116, 182, 116));
     height: 2vh;
 }
       
@@ -136,7 +136,7 @@ margin-top: 1.5rem;
     animation: time 3s normal forwards;
     box-shadow: 0 10px 40px -10px #fff;
     border-radius: 100px;
-    background: linear-gradient(to right, #017ac9, #af8a4a);
+    background: linear-gradient(to right, #017ac9, rgb(116, 182, 116));
     height: 2vh;
 }
       
@@ -148,7 +148,7 @@ margin-top: 1.5rem;
     animation: motivation 3s normal forwards;
     box-shadow: 0 10px 40px -10px #fff;
     border-radius: 100px;
-    background: linear-gradient(to right, #017ac9, #af8a4a);
+    background: linear-gradient(to right, #017ac9, rgb(116, 182, 116));
     height: 2vh;
 }
       
