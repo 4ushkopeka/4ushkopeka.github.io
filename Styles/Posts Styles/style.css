@@ -1,6 +1,13 @@
 html{
     scroll-behavior: smooth;
 }
+#logo{
+    width: 4vw;
+    margin-top: 1vw;
+    margin-right: 1vw;;
+    margin-bottom: 1vw;
+    margin-left: 2rem;
+}
 .background{
     aspect-ratio: 1/25;
     max-height: 390vh;
