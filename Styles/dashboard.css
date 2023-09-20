@@ -187,7 +187,7 @@ tr>td:nth-child(2)[rowspan]{
 }
 #trophy{
     position: absolute;
-    top: 6.5rem;
+    top: 8rem;
     right: -5rem;
     width: 10vw;
     opacity: 0%;
