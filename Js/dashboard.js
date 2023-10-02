@@ -44,7 +44,7 @@ function grading() {
                 break;
             }
         }
-        if(grade!=null && grade>0 && grade<=10) {
+        if(grade != null && grade > 0 && grade <= 10) {
             currentObj.exam.removeEventListener('click', tdHandler, true);
             currentObj.grade.textContent = Number(grade);
 
@@ -52,7 +52,7 @@ function grading() {
             currentObj.exam.style.pointerEvents = "none";
             await new Promise(r => setTimeout(r, 1000));
             currentObj.exam.classList.remove('exam');
-            if(grade<5.5){
+            if(grade < 5.5){
                 currentObj.exam.style.backgroundColor = "rgba(253, 29, 29, 0.25)";
                 quartiles[currentObj.quartile-1].examsFailed++;
             } else {
@@ -64,8 +64,8 @@ function grading() {
                 quartiles[currentObj.quartile-1].creditsTaken+=Number(currentObj.ec.textContent);
                 
                 let bar = document.getElementsByClassName('progress')[0];
-                barUpdates+=width;
-                bar.style.width = (barUpdates*10/6).toString()+'%';
+                barUpdates += width;
+                bar.style.width = (barUpdates * 10 / 6).toString() + '%';
                 thresholdHandler();
             }
             overviewHandler(currentObj);
@@ -182,8 +182,8 @@ function grading() {
         let totalExams = 0;
         let avgGrade = 0;
         for (const obj of quartiles) {
-            totalExams+=(obj.examsTaken + obj.examsFailed);
-            takenExams+=obj.examsTaken;
+            totalExams += (obj.examsTaken + obj.examsFailed);
+            takenExams += obj.examsTaken;
             takenCredits += obj.creditsTaken;
             avgGrade+=arrayHandler(obj.grades, 'sum');
         }
