@@ -192,12 +192,15 @@ tr>td:nth-child(2)[rowspan]{
     width: 10vw;
     opacity: 0%;
 }
+.hidden-trophy{
+    display: none;
+}
 .finished{
     animation-name: acquired;
     animation-duration: 1s;
     animation-delay: 3s;
     animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
 }
 @keyframes acquired {
     from{}

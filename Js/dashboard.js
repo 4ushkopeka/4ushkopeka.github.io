@@ -200,7 +200,8 @@ function grading() {
                 thresholds[2].classList.add('completed');
                 thresholds[3].classList.add('completed');
                 cat.classList.add('fly');
-                trophy.classList.add('finished')
+                trophy.classList.add('finished');
+                trophy.classList.remove('hidden-trophy');
             }
         }
     }
